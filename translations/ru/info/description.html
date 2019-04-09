@@ -1,0 +1,57 @@
+<div style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 350px">
+</div>
+<p class="story">
+    "Где умный человек прячет лист? В лесу.
+    Но что если леса нет? ... Он выращивает лес и прячет его там."<br>
+    -- Гилберт Кит Честертон
+</p>
+
+<p>
+    Когда-нибудь пробовали отправить секретное сообщение кому-то не пользуясь услугами почты? Вы можете использовать
+    газету, чтобы рассказать кому-то свой секрет. Даже если кто-то найдет ваше сообщение, легко отмахнуться и сказать
+    что это паранойя и теория заговора. Один из самых простых способов спрятать ваше секретное сообщение это использовать 
+    заглавные буквы. Давайте найдем несколько таких секретных сообщений.
+</p>
+
+<p>
+    Дан кусок текста. Соберите все заглавные буквы в одно слово в том порядке как они встречаются в куске текста.
+</p>
+<p>
+    Например: текст =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    если мы соберем все заглавные буквы, то получим сообщение "HELLO".
+</p>
+
+<p>
+    <strong>Входные данные: </strong> Текст как строка (юникод).
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Секретное сообщение как строка или пустая строка.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Пример:</strong>
+    </p>
+    <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Это простое упражнение по работе со строками: итерация, чтение и объединение.
+</p>
+
+<p>
+    <strong>Предусловие:</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
+ 
